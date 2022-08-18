@@ -1,0 +1,55 @@
+.tabs {
+  &__btns {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  &__btn {
+    min-width: 206px;
+
+    &:not(:last-child) {
+      border-right: none;
+    }
+
+    &_active {
+      background-color: $color-primary;
+      color: #fff;
+    }
+  }
+
+  &__item {
+    display: none;
+    padding-top: 50px;
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__test-question {
+    &:not(:first-child) {
+      margin-top: 45px;
+    }
+  }
+
+  @media screen and (max-width: 819px) {
+    &__btns {
+      flex-wrap: wrap;
+    }
+
+    &__btn {
+      width: 100%;
+      height: 40px;
+
+      &:not(:last-child) {
+        border-right: 1px solid $color-primary;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__item {
+      padding-top: 28px;
+    }
+  }
+}
+

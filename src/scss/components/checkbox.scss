@@ -1,0 +1,90 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    display: none;
+  }
+
+  &__btn {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-primary;
+    cursor: pointer;
+
+    &:before {
+      @include before-icon("../images/icons/check.svg", 16px, 11px);
+      display: none;
+    }
+  }
+
+  &__input:checked + &__btn:before {
+    display: inline-block;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 20px;
+  }
+
+  &_privacy {
+    .checkbox__btn {
+      width: 60px;
+      height: 60px;
+      border-color: $color-dark;
+
+      &:before {
+        background-image: url('../images/icons/check-dark.svg');
+        width: 20px;
+        height: 14px;
+      }
+    }
+  }
+
+  &_callback {
+    .checkbox__btn {
+      width: 50px;
+      height: 50px;
+    }
+
+    .checkbox__text {
+      font-size: 10px;
+    }
+  }
+
+  &_recruit {
+    .checkbox__btn {
+      border-color: #fff;
+      width: 60px;
+      height: 60px;
+
+      &:before {
+        background: #fff;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    .checkbox__text {
+      font-size: 14px;
+      color: #fff;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media screen and (max-width: 819px) {
+    &__text {
+      margin-left: 10px;
+    }
+  }
+}

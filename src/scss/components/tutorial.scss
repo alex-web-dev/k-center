@@ -1,0 +1,74 @@
+.tutorial {
+  background-color: #fff;
+  padding: 56px 109px 60px;
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 400;
+    color: $color-primary;
+  }
+
+  &__text {
+    margin-top: 23px;
+    line-height: 1.29;
+  }
+
+  &__btn {
+    margin-top: 36px;
+    padding: 0 12px;
+    height: 40px;
+    font-weight: 400;
+    min-width: auto;
+  }
+
+  @media screen and (max-width: 1399px) {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-left: 80px;
+    padding-right: 80px;
+
+    &__text {
+      margin-top: 13px;
+    }
+
+    &__btn {
+      margin-top: 26px;
+    }
+  }
+
+  @media screen and (max-width: 819px) {
+    padding: 50px 52px 60px;
+
+    &__title {
+      font-size: 16px;
+      line-height: 1.43;
+      font-weight: 500;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.33;
+      margin-top: 16px;
+    }
+
+    &__btn {
+      padding: 0 18px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  @media screen and (max-width: 340px) {
+    &__title {
+      font-size: 14px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.test-result {
+  background-color: #555195;
+  padding: 110px 0 115px;
+
+  &__title {
+    line-height: 1;
+  }
+
+  &__text {
+    margin-top: 27px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 90px 0 95px;
+  }
+  
+  @media screen and (max-width: 819px) {
+    padding: 70px 10px 75px;
+
+    &__title {
+      line-height: 1.14;
+    }
+  }
+}
+

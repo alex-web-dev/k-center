@@ -1,0 +1,39 @@
+.blog {
+  padding: 110px 0 120px;
+
+  &__header {
+    margin-bottom: 60px;
+  }
+
+  &__categories {
+    margin-top: 34px;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (max-width: 819px) {
+    padding: 70px 0 60px;
+
+    &__item {
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+
+    &__pagination {
+      margin-top: 30px;
+    }
+  }
+}

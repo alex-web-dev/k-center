@@ -1,0 +1,58 @@
+.programs-slider {
+  position: relative;
+
+  &__item-title {
+    max-width: 630px;
+  }
+
+  &__item-subtitle {
+    margin-top: 45px;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 500;
+    color: $color-primary;
+  }
+
+  &__item-text {
+    margin-top: 15px;
+  }
+
+  &__btns {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 5px;
+  }
+
+  &__prev {
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 991px) {
+    &__prev,
+    &__next {
+      &:before {
+        width: 48px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 819px) {
+    padding-bottom: 40px;
+
+    &__btns {
+      bottom: 0;
+      left: 0;
+      top: unset;
+    }
+
+    &__prev,
+    &__next {
+      &:before {
+        width: 93px;
+      }
+    }
+  }
+}
+

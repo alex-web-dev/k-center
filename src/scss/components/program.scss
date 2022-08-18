@@ -1,0 +1,180 @@
+.program {
+  padding: 20px 0 120px;
+
+  &__breadcrumb {
+    margin-bottom: 90px;
+  }
+
+  &__nav {
+    margin: 20px -10px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__nav-btn {
+    font-size: 16px;
+    height: 40px;
+    padding: 0;
+    min-width: 197px;
+    margin: 5px 10px;
+  }
+
+  &__title-inf {
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    line-height: 1.88;
+  }
+
+  &__about {
+    margin-top: 105px;
+  }
+
+  &__tasks {
+    margin-top: 70px;
+  }
+
+  &__teachers {
+    margin-top: 70px;
+  }
+
+  &__rates {
+    margin-top: 80px;
+  }
+
+  &__rates-title {
+    margin-bottom: 18px;
+  }
+
+  &__rates-footer {
+    margin-top: 18px;
+  }
+
+  &__rates-ps {
+    line-height: 1.79;
+  }
+
+  &__discount {
+    margin-top: 45px;
+  }
+
+  &__reviews {
+    margin-top: 110px;
+  }
+
+  &__images-slider {
+    margin-top: 60px;
+  }
+
+  &__recruit {
+    margin-top: 120px;
+  }
+
+  &__callback-question {
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 90px;
+
+    &__header {
+      margin-top: 90px;
+    }
+
+    &__title-inf {
+      margin-bottom: 22px;
+    }
+
+    &__text {
+      margin-top: 20px;
+    }
+
+    &__tasks {
+      margin-top: 60px;
+    }
+
+    &__teachers {
+      margin-top: 55px;
+    }
+
+    &__reviews {
+      margin-top: 70px;
+    }
+
+    &__recruit {
+      margin-top: 90px;
+    }
+  
+    &__callback-question {
+      margin-top: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 819px) {
+    &__header {
+      margin-top: 50px;
+    }
+
+    &__nav {
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+
+    &__nav-btn {
+      width: calc(50% - 10px);
+      margin: 5px;
+      min-width: auto;
+
+      &_submit {
+        width: calc(100% - 10px);
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.33;
+      margin-left: 52px;
+    }
+
+    &__about {
+      margin-top: 50px;
+    }
+
+    &__tasks {
+      margin-top: 45px;
+    }
+
+    &__teachers {
+      margin-top: 45px;
+    }
+
+    &__rates-footer {
+      margin-left: 50px;
+    }
+
+    &__rates-ps {
+      font-size: 12px;
+    }
+
+    &__reviews {
+      margin-top: 80px;
+    }
+
+    &__images-slider {
+      margin-top: 90px;
+    }
+
+    &__callback-question {
+      margin-top: 70px;
+    }
+  }
+
+  @media screen and (max-width: 340px) {
+    &__text {
+      font-size: 12px;
+    }
+  }
+}
+

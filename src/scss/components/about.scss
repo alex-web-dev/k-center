@@ -1,0 +1,36 @@
+.about {
+  padding-bottom: 120px;
+
+  &__features {
+    margin-top: -130px;
+  }
+
+  &__work {
+    margin-top: 80px;
+  }
+ 
+  @media screen and (max-width: 1399px) {
+
+  }
+  
+  @media screen and (max-width: 1199px) {
+  
+  }
+  
+  @media screen and (max-width: 991px) {
+    &__features {
+      margin-top: -50px;
+    }
+  }
+  
+  @media screen and (max-width: 819px) {
+    &__features {
+      margin-top: 75px;
+    }
+    
+    &__work {
+      margin-top: 70px;
+    }
+  }
+}
+

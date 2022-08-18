@@ -1,0 +1,15 @@
+.body {
+  &_lock {
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &_lock {
+      padding-right: 16px;
+
+      .header {
+        padding-right: 16px;
+      }
+    }
+  }
+}

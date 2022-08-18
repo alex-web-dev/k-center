@@ -1,0 +1,50 @@
+.callback-question {
+  &__content {
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    color: $color-dark;
+  }
+
+  &__text {
+    margin-top: 36px;
+    line-height: 1.25;
+  }
+
+  &__btn {
+    width: 414px;
+    margin-top: 46px;
+  }
+
+  @media screen and (max-width: 991px) {
+    &__content {
+      max-width: 522px;
+    }
+
+    &__text {
+      margin-top: 26px;
+    }
+
+    &__btn {
+      width: 387px;
+      margin-top: 36px;
+    }
+  }
+
+  @media screen and (max-width: 819px) {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__text {
+      margin-top: 24px;
+    }
+
+    &__btn {
+      max-width: 65%;
+    }
+  }
+}

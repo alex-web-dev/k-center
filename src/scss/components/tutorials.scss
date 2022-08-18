@@ -1,0 +1,50 @@
+.tutorials {
+  padding: 110px 0 120px;
+
+  &__categories {
+    margin-top: 33px;
+  }
+
+  &__list {
+    margin-top: 60px;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (max-width: 819px) {
+    padding: 70px 0 60px;
+
+    &__categories {
+      margin-top: 40px;
+
+      .categories__btn {
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 17px;
+        padding-right: 17px;
+      }
+    }
+
+    &__item {
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+
+    &__pagination {
+      margin-top: 60px;
+    }
+  }
+}

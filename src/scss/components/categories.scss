@@ -1,0 +1,12 @@
+.categories {
+  &__list {
+    margin: -5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    margin: 5px;
+  }
+}
+

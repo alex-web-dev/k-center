@@ -1,0 +1,27 @@
+.discount {
+  background-color: #fff;
+  padding: 40px 109px 50px;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+  
+  @media screen and (max-width: 819px) {
+    padding-left: 52px;
+    padding-right: 52px;
+
+    &__title {
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+  }
+}

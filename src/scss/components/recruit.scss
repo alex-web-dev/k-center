@@ -1,0 +1,29 @@
+.recruit {
+  padding: 100px 0 120px;
+  background-color: $color-primary;
+
+  &__title {
+    font-size: 36px;
+  }
+
+  &__form {
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0 80px;
+  }
+  
+  @media screen and (max-width: 819px) {
+    padding: 70px 0 90px;
+
+    &__title {
+      font-size: 21px;
+    }
+
+    &__form {
+      margin-top: 35px;
+    }
+  }
+}
+
