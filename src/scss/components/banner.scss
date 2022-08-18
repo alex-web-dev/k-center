@@ -1,0 +1,150 @@
+.banner {
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__inf {
+    max-width: 630px;
+    margin-right: 20px;
+  }
+
+  &__title {
+    margin-top: 110px;
+  }
+
+  &__subtitle {
+    margin-top: 36px;
+  }
+
+  &__img {
+    max-width: 52%;
+    height: auto;
+    transform: translateY(-50px);
+    object-fit: contain;
+    object-position: top;
+  }
+
+  &_index {
+    .banner__img {
+      transform: translate(10px, -50px);
+    }
+  }
+
+  &_about {
+    .banner__inf {
+      margin-right: 20px;
+    }
+
+    .banner__img {
+      transform: translateY(-65px);
+    }
+  }
+
+  &_programs {
+    position: relative;
+
+    .banner__img {
+      transform: translateY(0);
+      max-width: 60%;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0;
+      width: 45%;
+      height: 100%;
+      background-color: #e35240;
+    }
+  }
+
+  @media screen and (max-width: 1399px) {
+    &_about {
+      .banner__img {
+        max-width: 480px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &_about {
+      .banner__img {
+        max-width: 387px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    &__img {
+      transform: translateY(0);
+    }
+
+    &_index {
+      .banner__img {
+        transform: translate(0, 0);
+      }
+    }
+
+    &_about {
+      .banner__img {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  @media screen and (max-width: 819px) {
+    position: relative;
+
+    &__inf {
+      margin-right: 0;
+    }
+
+    &__title {
+      margin-top: 70px;
+      max-width: 52%;
+    }
+
+    &_about {
+      .banner__content {
+        flex-wrap: wrap;
+      }
+
+      .banner__inf {
+        order: 2;
+        margin-right: 0;
+      }
+
+      .banner__title {
+        max-width: 100%;
+        margin-top: 0;
+      }
+
+      .banner__img {
+        max-width: 48%;
+        margin-left: auto;
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &_programs {
+      .banner__inf {
+        position: absolute;
+        z-index: 1;
+        bottom: -7px;
+      }
+  
+      .banner__img {
+        max-width: 65%;
+        margin-left: auto;
+      }
+    }
+  }
+}

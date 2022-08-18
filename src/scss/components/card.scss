@@ -1,0 +1,113 @@
+.card {
+  padding: 100px 109px 95px;
+  background-color: #ffffff;
+
+  &__title {
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-top: 36px;
+  }
+
+  &__btns {
+    margin: 36px 0 20px;
+  }
+
+  &__btn {
+    width: 100%;
+    min-width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__formats {
+    margin: 28px 0 10px;
+  }
+
+  &__format {
+    position: relative;
+    line-height: 2.25;
+    display: inline;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+
+      &:after {
+        content: "";
+        right: 0;
+        top: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 14px;
+        width: 3px;
+        height: 3px;
+        background: #fff;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &_primary {
+    background-color: $color-primary;
+    color: #fff;
+  }
+
+  &_second {
+    background-color: $color-secondary;
+  }
+
+  &_primary,
+  &_second {
+    color: #fff;
+
+    .card__title {
+      color: inherit;
+    }
+  }
+
+  @media screen and (max-width: 1399px) {
+    padding: 70px 67px 80px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__format {
+      &:not(:last-child) {
+        margin-right: 6px;
+
+        &:after {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 819px) {
+    padding: 50px 52px 60px;
+
+    &__title {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    &__text {
+      margin-top: 15px;
+    }
+    
+    &__btn {
+      font-size: 12px;
+    }
+
+    &__format {
+      font-size: 12px;
+    }
+
+    &_primary,
+    &_second {
+      .card__title {
+        font-size: 18px;
+      }
+    }
+  }
+}

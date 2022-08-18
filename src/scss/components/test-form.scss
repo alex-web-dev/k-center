@@ -1,0 +1,82 @@
+.test-form {
+  &__title {
+    font-size: 36px;
+    line-height: 1.33;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+
+  &__header {
+    margin-bottom: 55px;
+  }
+
+  &__input {
+    height: 60px;
+    border: 1px solid $color-dark;
+    background-color: transparent;
+    padding-left: 20px;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $color-dark;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &_message {
+      resize: none;
+      padding-top: 22px;
+      height: 150px;
+    }
+  }
+
+  &__footer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__privacy {
+    max-width: 250px;
+    margin-right: 85px;
+  }
+
+  &__submit {
+    width: 413px;
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 1199px) {
+    &__title {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 819px) {
+    &__title {
+      font-size: 21px;
+      line-height: 1;
+      margin-bottom: 26px;
+    }
+
+    &__privacy {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+

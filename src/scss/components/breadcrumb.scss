@@ -1,0 +1,15 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 2.14;
+  font-weight: 500;
+
+  &__separator {
+    margin: 0 5px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}

@@ -1,0 +1,52 @@
+.tests {
+  padding: 110px 0 120px;
+
+  &__subtitle {
+    margin-top: 36px;
+  }
+
+  &__list {
+    margin-top: 110px;
+  }
+
+  &__item {
+    height: 100%;
+  }
+
+  &__callback-question {
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 100px;
+
+    &__subtitle {
+      margin-top: 40px;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    &__list {
+      margin-top: 85px;
+    }
+
+    &__callback-question {
+      margin-top: 90px;
+    }
+  }
+
+  @media screen and (max-width: 819px) {
+    padding-top: 70px;
+
+    &__subtitle {
+      margin-top: 24px;
+      font-size: 14px;
+      line-height: 1.43;
+      font-weight: 500;
+    }
+
+    &__list {
+      margin-top: 55px;
+    }
+  }
+}

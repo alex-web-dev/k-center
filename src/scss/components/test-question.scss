@@ -1,0 +1,23 @@
+.test-question {
+  &__text {
+    margin-bottom: 23px;
+    line-height: 1.71;
+  }
+
+  &__answer {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__answer-text {
+    margin-left: 20px;
+  }
+  
+  @media screen and (max-width: 819px) {
+    &__text {
+      margin-bottom: 18px;
+    }
+  }
+}
+

@@ -1,0 +1,36 @@
+.work {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &__item-text {
+    margin: 10px 0;
+  }
+
+  &__item-btns {
+    padding-top: 65px;
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item-btn {
+    margin: 10px;
+  }
+
+  @media screen and (max-width: 819px) {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 48px;
+      }
+    }
+
+    &__item-btn {
+      width: calc(50% - 20px);
+      min-width: auto;
+      max-width: 197px;
+    }
+  }
+}

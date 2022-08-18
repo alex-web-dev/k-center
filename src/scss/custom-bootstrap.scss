@@ -1,0 +1,30 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 820px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 810px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1300px
+) !default;
+
+$grid-gutter-width: 1.25em !default;
+
+$spacer: 1rem !default;
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .625,
+  3: $spacer,
+  4: $spacer * 1.25,
+  5: $spacer * 3,
+) !default;
+
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';

@@ -1,0 +1,164 @@
+.contacts {
+  padding-top: 110px;
+  height: 100%;
+
+  &__title {
+    margin-bottom: 46px;
+  }
+
+  &__slider {
+    position: relative;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+
+  &__slider-img {
+    display: block;
+  }
+
+  &__prev,
+  &__next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba($color-primary, 0.98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:before {
+      @include before-icon("../images/icons/long-arrow-white.svg", 30px, 7px);
+      background-size: cover;
+      background-position: right;
+    }
+  }
+
+  &__prev {
+    left: 0;
+    
+    &:before {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__next {
+    right: 0;
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 1.33;
+
+    &:not(:first-child) {
+      margin-top: 18px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+  }
+
+  &__social-list {
+    margin-top: 34px;
+  }
+
+  &__social-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__social-link {
+    margin-right: 20px;
+    flex: 0 0 auto;
+  }
+
+  &__social-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__social-text {
+    font-weight: 400;
+    line-height: 1.29;
+  }
+
+  &__map {
+    margin-top: 120px;
+    height: 400px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__slider {
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    &__social {
+      .contacts__social-list {
+        display: none;
+      }
+    }
+
+    &__social-list {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__social-item {
+      max-width: 210px;
+
+      &:not(:first-child) {
+        margin-top: 0;
+      }
+    }
+
+    &__map {
+      margin-top: 60px;
+    }
+  }
+
+  @media screen and (max-width: 819px) {
+    padding-top: 70px;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__slider {
+      margin-bottom: 20px;
+    }
+
+    &__social-list {
+      display: block;
+    }
+
+    &__social-item {
+      max-width: 100%;
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+  
+    &__social-link {
+      margin-right: 10px;
+    }
+  }
+}

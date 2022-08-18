@@ -1,0 +1,27 @@
+.main {
+  flex: 1 1 auto;
+  padding-top: 82px;
+
+  &__cards {
+    margin-top: -155px;
+  }
+
+  &__photos {
+    margin-top: 60px;
+  }
+
+  @media screen and (max-width: 991px) {
+    &__cards {
+      margin-top: -60px;
+    }
+  }
+
+  @media screen and (max-width: 819px) {
+    padding-top: 50px;
+
+    &__cards {
+      margin-top: 75px;
+    }
+
+  }
+}

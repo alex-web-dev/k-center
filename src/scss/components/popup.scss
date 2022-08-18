@@ -1,0 +1,159 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 7;
+
+  &:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color-dark, 0.8);
+  }
+
+  &__content {
+    position: absolute;
+    padding: 110px 128px;
+    width: 886px;
+    max-width: calc(100% - 18px);
+    max-height: calc(100% - 170px);
+    overflow-y: auto;
+    background: #fff;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__subtitle {
+    margin-bottom: 54px;
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 88px;
+  }
+
+  &__close-lines {
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 124px;
+      height: 1px;
+      background-color: $color-primary;
+    }
+
+    &:before {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:after {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+
+  &__callback-form {
+    margin-bottom: 10px;
+    
+    .callback-form__submit {
+      flex: 1 1 auto;
+      margin-left: 20px;
+    }
+  }
+
+  &_show {
+    display: block;
+  }
+
+  &_message {
+    .popup__content {
+      padding: 55px 88px 45px;
+      background-color: $color-dark;
+      width: 630px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__subtitle {
+      margin-bottom: 36px;
+    }
+
+    &__callback-form {
+      .callback-form__submit {
+        margin-left: 0;
+      }
+    }
+
+    &__close {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__close-lines {
+      &:before,
+      &:after {
+        width: 67px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    &__content {
+      padding: 90px 20px 70px;
+    }
+
+    &__close {
+      &:before {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &_message {
+      padding: 40px 20px 35px;
+    }
+  }
+  
+  @media screen and (max-width: 819px) {
+    &__content {
+      padding: 70px 10px 60px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    &__close {
+      right: 10px;
+      top: 10px;
+
+      &:before {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &_message {
+      padding: 25px 15px;
+    }
+  }
+}
+

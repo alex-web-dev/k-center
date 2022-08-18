@@ -1,0 +1,29 @@
+.features {
+  padding: 100px 0 115px;
+  background-color: $color-dark;
+  position: relative;
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+
+  &__item-icon {
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  @media screen and (max-width: 819px) {
+    padding: 70px 0 80px;
+
+    &__item-icon {
+      margin-right: 37px;
+    }
+
+    &__item-text {
+      margin-left: 52px;
+    }
+  }
+}

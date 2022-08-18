@@ -1,0 +1,29 @@
+.test {
+  padding: 80px 109px 75px;
+  background-color: #fff;
+
+  &__title {
+    line-height: 1;
+  }
+
+  &__text {
+    margin-top: 27px;
+  }
+
+  &_dark {
+    background-color: $color-dark;
+  }
+ 
+  @media screen and (max-width: 1199px) {
+    padding: 65px 80px 60px;
+  }
+  
+  @media screen and (max-width: 991px) {
+    padding: 50px 68px 55px;
+  }
+  
+  @media screen and (max-width: 819px) {
+    padding: 50px 52px 55px;
+  }
+}
+
